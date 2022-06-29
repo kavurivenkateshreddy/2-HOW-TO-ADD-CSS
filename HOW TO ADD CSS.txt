@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>HOW TO ADD CSS</title>
+    <link rel="Stylesheet" href="EXTERNAL.css">
+    <style>
+         h2
+        {
+            text-align:center;color:blue;
+        }
+         
+         #INTERNAL 
+        {
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <p><h1><u>HOW TO ADD CSS</u></h1></p>
+    <p>---> When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+    <p>---> There are three ways of inserting a style sheet:</p>
+    <p><ol type="1">
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li>
+    </ol></p>
+
+    <p><ol type="1">
+        <li id="EXTERNAL"><h2>EXTERNAL CSS</h2></li>
+        <p>---> With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+        <p>---> External styles are defined within the <link> element, inside the <head> section of an HTML page:</p>
+        <p>---> An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+        <p>---> That save as a seperate file as .CSS and that file link is inserted in given HTML file.</p>
+        <p><h3><font color="darkpink">EXAMPLE : </font></h3></p>
+
+        <P>
+            &LT html &GT <br>
+            &LT head &GT <br><br>
+            &LT link rel="stylesheet" href="mystyle.css" &GT <br><br>
+            &LT /head &GT <br>
+            &LT body &GT <br>
+            
+            &LT h1 &GT This is a heading &LT /h1 &GT <br>
+            &LT p &GT This is a paragraph. &LT /p &GT <br>
+            
+            &LT /body &GT <br>
+            &LT /html &GT 
+        </p>
+
+            <li Id="INTERNAL"><h2>INTERNAL CSS</h2></li>
+            <p>---> An internal style sheet may be used if one single HTML page has a unique style.</p>
+            <p>---> Internal styles are defined within the &lt style &gt element, inside the &lt head &gt section of an HTML page:</p>
+            <p><h3><font color="darkpink">EXAMPLE : </font></h3></p>
+            <p>
+                &lt html &gt <br>
+                &lt head &gt <br><br>
+                &lt style &gt <br>
+                body <br>
+                { <br>
+                  background-color: linen; <br>
+                } <br><br>
+                
+                h1 <br>
+                { <br>
+                  color: maroon;margin-left: 40px; <br>
+                } <br>
+                &lt /style &gt <br><br>
+                &lt /head &gt <br>
+                &lt body &gt <br>
+                
+                &lt h1>This is a heading &lt /h1 &gt <br>
+                &lt p>This is a paragraph. &lt /p &gt <br>
+                
+                &lt /body &gt <br>
+                &lt /html &gt 
+            </p>
+
+                <li style="background-color:pink"><h2><font color="blue">INLINE CSS</font></h2></li>
+                <p>---> An inline style may be used to apply a unique style for a single element.</p>
+                <p>---> Where Inline styles are defined within the "style" attribute of the relevant element: with in the &lt body &gt tag i the HTML file.</p>
+                <p><h3><font color="darkpink">EXAMPLE : </font></h3></p>
+                <p>
+                    &lt html &gt <br>
+                    &lt body> <br><br>
+                    
+                    &lt h1 style="color:blue;text-align:center;">This is a heading &lt /h1 &gt <br>
+                    &lt p style="color:red;">This is a paragraph. &lt /p &gt <br><br>
+                    
+                    &lt /body &gt<br>
+                    &lt /html &gt<br>
+                </p>
+    </ol></p>
+    <p><font color="blue"><u><h3>MULTIPLE STYLE SHEET</h3></u></font></p>
+    <P>---> I the  different style sheet are add to the same selected then the value taken from the latest read style sheet will be used.</P>
+    <p>---> It means the last given style sheet will taken.</p>
+    <p><h3><font color="darkpink">EXAMPLE : </font></h3></p>
+    <p>
+        &lt head &gt <br>
+        &lt link rel="stylesheet" type="text/css" href="mystyle.css" &gt <br><br>
+        &lt style &gt <br>
+        h1 <br>
+        { <br>
+          color: orange; <br>
+        } <br>
+        &lt /style &gt <br><br>
+        &lt /head &gt <br>
+    </p>
+</body>
+</html>
